@@ -6,9 +6,14 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
-
-<HBox id="scene" prefHeight="420.0" prefWidth="650.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" >
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<HBox id="scene" prefHeight="500.0" prefWidth="800.0" spacing="20.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" style="-fx-background-color: #B0C4DE ">
     <Pane prefHeight="400.0" prefWidth="400.0" >
         <Circle centerX="200.0" centerY="200.0" radius="200.0" styleClass="toile"/>
         <Circle centerX="200.0" centerY="200.0" radius="150.0" styleClass="toile"/>
@@ -29,4 +34,25 @@
         <Text x="26" y="99" text="Compétence 6" />
         <Pane fx:id="toile" styleClass="toile"/>
     </Pane>
+    <AnchorPane id="AnchorPane" fx:id="createPersonAnchor" prefHeight="247.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Button layoutX="250.0" layoutY="420.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" text="Vider" />
+            <Button layoutX="170.0" layoutY="420.0" mnemonicParsing="false"  prefHeight="25.0" prefWidth="60.0" text="Tracer" />
+            <TextField id="Réaliser" fx:id="Réaliser" layoutX="300.0" layoutY="50.0" prefHeight="20.0" prefWidth="50.0"/>
+            <TextField id="Optimiser"  fx:id="Optimiser" layoutX="300.0" layoutY="100.0" prefHeight="20.0" prefWidth="50.0"/>
+            <TextField id="Administrer"  fx:id="Administrer" layoutX="300.0" layoutY="150.0" prefHeight="20.0" prefWidth="50.0"/>
+            <TextField id="Gérer"  fx:id="Gérer" layoutX="300.0" layoutY="200.0" prefHeight="20.0" prefWidth="50.0"/>
+            <TextField id="Conduire"  fx:id="Conduire" layoutX="300.0" layoutY="250.0" prefHeight="20.0" prefWidth="50.0"/>
+            <TextField id="Collaborer"  fx:id="Collaborer" layoutX="300.0" layoutY="300.0" prefHeight="20.0" prefWidth="50.0"/>
+            <Text layoutX="100.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compétence 1 - Réaliser :" wrappingWidth="200" />
+            <Text layoutX="100.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compétence 2 - Optimiser :" wrappingWidth="200" />
+            <Text layoutX="100.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compétence 3 - Administrer :" wrappingWidth="200" />
+            <Text layoutX="100.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compétence 4 - Gérer :" wrappingWidth="200" />
+            <Text layoutX="100.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compétence 5 - Conduire :" wrappingWidth="200" />
+            <Text layoutX="100.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Compétence 6 - Collaborer :" wrappingWidth="200" />
+        </children>
+    </AnchorPane>
+
+
+
 </HBox>

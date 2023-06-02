@@ -32,6 +32,7 @@ public class ToileController implements Initializable {
     private static int noteMaximale = 20;
 
 
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
     }
@@ -45,5 +46,6 @@ public class ToileController implements Initializable {
         return (int) (rayonCercleExterieur - Math.sin(Math.toRadians(angleDepart - (axe-1)  * angleEnDegre)) * rayonCercleExterieur
                 *  (value / noteMaximale));
     }
+
 
 }

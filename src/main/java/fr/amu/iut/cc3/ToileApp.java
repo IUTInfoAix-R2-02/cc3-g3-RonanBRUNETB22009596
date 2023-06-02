@@ -12,11 +12,13 @@ public class ToileApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
+        primaryStage.setTitle("Résultat au differente compétences du BUT");
         Parent root = FXMLLoader.load(getClass().getResource("toile.fxml"));
         primaryStage.setResizable(false);
         primaryStage.setScene( new Scene(root) );
         primaryStage.show();
     }
+    
 
 }
 
